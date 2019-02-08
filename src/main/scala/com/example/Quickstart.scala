@@ -36,7 +36,7 @@ class Quickstart {
     documents.forEach{document =>
       println("User: " + document.getId())
       println("First: " + document.getString("first"))
-      if (document.contains("middle")) println("Middle: " + document.getString("middle"))
+      if (document.getString("middle") != null) println("Middle: " + document.getString("middle"))
       println("Last: " + document.getString("last"))
       println("Born: " + document.getLong("born"))
     }
@@ -49,7 +49,7 @@ class Quickstart {
     documents.forEach{document =>
       println("User: " + document.getId())
       println("First: " + document.getString("first"))
-      if (document.contains("middle")) println("Middle: " + document.getString("middle"))
+      if (document.getString("middle") != null) println("Middle: " + document.getString("middle"))
       println("Last: " + document.getString("last"))
       println("Born: " + document.getLong("born"))
     }
